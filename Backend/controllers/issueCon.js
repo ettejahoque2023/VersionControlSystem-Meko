@@ -102,6 +102,6 @@ module.exports={
     createIssue,
     updateIssueById,
     deleteIssueById,
-    getAllIssue,
+    getAllIssues,
     getIssueById
 };
