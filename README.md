@@ -1,5 +1,5 @@
 # VersionControlSystem-Meko
-# GitHub Clone
+A GitHub Clone
 
 A full-stack web application simulating core features of GitHub, built with **React.js**, **Node.js**, **Express.js**, and **MongoDB**.  
 This project replicates repository management, branching, commits, and version tracking with a clean, responsive UI.
