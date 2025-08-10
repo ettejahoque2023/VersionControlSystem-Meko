@@ -25,6 +25,7 @@ async function connectClient() {
 async function connectClient() {
   if (!client) {
     client=new MongoClient(uri);
+    await client.connect();
   }
 }
 
@@ -65,7 +66,7 @@ async function signUp (req,res) {
 
     //return the token
     const token = jwt.sign(
-      { id: result.insertId },
+      { id: result.insertedId },
       process.env.JWT_SECRET_KEY,
       { expiresIn: "1h" }
     );
